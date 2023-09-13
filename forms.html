@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Car Rental System contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ss.css" />
+	<link rel="stylesheet" href="style.css">
+    <style></style>
+  </head>
+  <style>
+    aside {
+      background-ccolr: cyan;
+      text-align: center;
+    }
+    article {
+      background-ccolr: cyan;
+      float: left;
+    }
+    footer {
+      background-ccolr: cyan;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <header id="myHead">
+      <h2>Car Rental</h2>
+      <nav>
+        <!--nav tag is navigation tag-->
+        <a href="#Home">HOME</a>
+        <a href="#">BOOKING</a>
+        <a href="forms.html">CONTACT</a>
+
+        <a href="#About">ABOUT</a>
+      </nav>
+    </header>
+    <article>
+      <!--Article section-->
+      <div class="bo">
+        <h3>Contact Form</h3>
+
+        <div class="container">
+          <form action="connect.php" method="POST">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            /><br />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            /><br />
+
+            <label for="country">Country</label>
+            <select id="country" name="country" value="I">
+              <option value="India">India</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option> </select
+            ><br />
+
+            <label for="subject">Subject</label><br>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px;"
+            ></textarea
+            ><br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </article>
+
+    <aside>
+      <div class="so">
+          <h1>Social Media </h1>
+
+          <!-- Add font awesome icons -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="https://youtube.com/" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+    </aside>
+  </body>
+</html>

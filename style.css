@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: poppins;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #30475e;
+  color: white;
+  padding: 15px 0;
+}
+
+header nav a {
+  color: white;
+  margin-right: 70px;
+  margin-left: 30px;
+  font-weight: 500;
+}
+header div.sign-in-up button {
+  background-color: #ffa500;
+  font-size: 16px;
+  font-weight: 550;
+  padding: 4px 12px;
+  border: 2px solid #fff;
+  color: Red;
+  border-radius: 5px;
+  outline: none;
+  float: left;
+  margin-left: 10px;
+}
+
+header div.sign-in-up button:last-child {
+  background-color: #fa9579;
+}
+
+div.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+div.popup-container div.popup {
+  background-color: #f0f0f0;
+  width: 350px;
+  border-radius: 5px;
+  padding: 20px 25px 30px 25px;
+}
+
+div.popup-container div.popup h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: #4eac10;
+}
+
+div.popup-container div.popup h2 button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+  font-weight: 550;
+  color: #797775;
+}
+
+div.popup-container div.popup input {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #305e3c;
+  border-radius: 0;
+  padding: 5px 0;
+  font-weight: 550;
+  font-size: 14px;
+  outline: none;
+}
+div.popup-container div.popup button.login-btn,
+div.popup-container div.register button.register-btn{
+  font-weight: 550;
+  font-style: 15px;
+  color: white;
+  background-color: #006416;
+  padding: 4px 10px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+}
+
+div.popup-container div.register {
+  background-color: #edeef7;
+}
+
+div.popup-container div.register h2 {
+  color: #c92525;
+}
+
+div.popup-container div.register input {
+  border-bottom-color: #c92525;
+}
+
+div.popup-container div.register button.register-btn {
+  background-color: #c92525;
+}
+div.popup-container div.user button.user-btn {
+  background-color: #00ff80;
+}
+
+
+div.sign button {
+  background-color: #ffa500;
+  font-size: 16px;
+  font-weight: 550;
+  padding: 4px 12px;
+  border: 2px solid #fff;
+  color: Red;
+  border-radius: 5px;
+  outline: none;
+  float: left;
+  margin-left: 10px;
+}
+
+
+div.user{
+  color: #30475e;
+  background-color: #75cfb8;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+div.user a{
+  color: #30475e;
+}
+
+Aside {
+  margin-top: 40px;
+  margin-left: 15px;
+  float: center;
+  font-size: 40px;
+  color: #3a1748;
+  font-weight: 4000;
+  padding: 4px 12px;
+}
+div.wo{
+	font-size:30px;
+	font-weight:500;
+}
+
+.main {
+  display: flex;
+}
+/*.main .text {
+  color: #fff;
+  margin-left: 30px;
+  font-size: 50px;
+  font-weight: 300;
+}*/
+.main .option {
+  margin-left: 30px;
+  height: 90px;
+  line-height: 60px;
+  overflow: hidden;
+}
+.option li {
+  list-style: none;
+  margin-left: 30px;
+  color: #43d390;
+  font-size: 70px;
+  font-weight: 300;
+  position: relative;
+  top: 0;
+  animation: slide 16s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.option li span {
+  margin-left: 30px;
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.option li span::after {
+  margin-left: 30px;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-left: 1px solid #43d390;
+  animation: typing 4s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.demoe {
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  margin-top: 80px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  font-weight: 900;
+  background-color: #dbf9db;
+}
+
+.row {
+  float: center;
+  image-rendering: center;
+  margin-top: 20px;
+  margin-left: 80px;
+  color: rebeccapurple;
+  padding: 30px 30px;
+  font-size: 22px;
+  font-weight: 800;
+}
+.column {
+  float: left;
+  color: #30475e;
+  width: 33.33%;
+  padding: 10px 10px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.desc {
+  float: center;
+  font-size: 30px;
+
+  color: #3a1748;
+}
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.demo {
+  margin-top: 40px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-right: 1px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* Top left text */
+.top-center {
+  position: absolute;
+  color: black;
+  font-size: 22px;
+  top: 8px;
+  left: 16px;
+}
+
+.foo {
+  font-size: 16px;
+  color: #f80c0c;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+.about-img {
+  float: center;
+  flex: 1 1 21rem;
+}
+.about-text {
+  flex: 1 1 21 rem;
+}
+.Book{
+	  float: center;
+  image-rendering: center;
+  margin-top: 20px;
+  margin-left: 80px;
+  color: rebeccapurple;
+  padding: 30px 30px;
+  font-size: 22px;
+  font-weight: 800;
+	
+}
+.Book{
+	margin-right:20px;
+	margin-left:0px;
+}
+.va{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  color:red;
+	
+}
+.aside{
+	text-align:center;
+	
+	i
+}
